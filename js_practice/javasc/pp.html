@@ -6,12 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">
-        var i = 0;
-       while(i < 10) {
-        document.write("Hi, coding!" +i+ "<br />");
-        i = i + 1;
-       }
+    <script >
+        var id=prompt('아이디를 입력하세요.');
+        if(id === "bsdw") {
+            var password=prompt('비밀번호를 입력하세요.');
+            if (password==="20170402"){
+                alert('로그인하셨습니다.'+id+'님 반갑습니다.')
+            } else{alert('비밀번호가 틀립니다.');}
+            
+        }
+
+
     </script>
 </body>
 </html>
