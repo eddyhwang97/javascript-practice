@@ -12,7 +12,7 @@ const btns = document.querySelectorAll('.btn');
 btns.forEach(function (btn) {
     // addEventListener로 클릭기능을 만들고 => 함수 e를 실행한다.
     btn.addEventListener('click',function(e){
-        //styles는 현재타겟과 클래스리스트를 불러온다고 선언한다.
+        //styles함수는 현재타겟과 클래스리스트를 불러온다고 선언한다.
         const styles = e.currentTarget.classList
         //(조건문)styles에 decrease class가 있으면 count를 --한다.
         if(styles.contains('decrease')){
