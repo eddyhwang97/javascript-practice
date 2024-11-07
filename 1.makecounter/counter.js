@@ -10,19 +10,19 @@ const btns = document.querySelectorAll('.btn');
 
 // forEach로 모든 버튼을 찾고
 btns.forEach(function (btn) {
-    // addEventListener를 추가해 클릭하여 event Object를 사용한다.
+    // addEventListener로 클릭기능을 만들고 => 함수 e를 실행한다.
     btn.addEventListener('click',function(e){
         //styles는 현재타겟과 클래스리스트를 불러온다고 선언한다.
         const styles = e.currentTarget.classList
-        //styles에 decrease class가 있으면 count를 --한다.
+        //(조건문)styles에 decrease class가 있으면 count를 --한다.
         if(styles.contains('decrease')){
             count--; 
         }
-        //아니면 styles에 incease class가 있으면 count를 ++한다.
+        //위 조건 불충족시 styles에 incease class가 있으면 count를 ++한다.
         else if(styles.contains('increase')){
             count++;
         }else{
-            //아니면 count를 0으로한다.
+            //위조건문 불충족시 count를 0으로한다.
             count = 0;
         }
         ////////////////스타일///////////////////
